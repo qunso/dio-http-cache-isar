@@ -3,10 +3,9 @@ import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'package:dio_http_cache/src/core/config.dart';
 import 'package:dio_http_cache/src/core/obj.dart';
-import 'package:dio_http_cache/src/store/store_disk.dart';
 import 'package:dio_http_cache/src/store/store_impl.dart';
+import 'package:dio_http_cache/src/store/store_disk.dart';
 import 'package:dio_http_cache/src/store/store_memory.dart';
-import 'package:sqflite/utils/utils.dart';
 
 class CacheManager {
   CacheConfig _config;
@@ -108,7 +107,7 @@ class CacheManager {
   }
 
   String _convertMd5(String str) {
-    return hex(md5.convert(_utf8encoder.convert(str)).bytes);
+    return md5.convert(_utf8encoder.convert(str)).toString();
   }
 
   Future<bool> _getCacheFutureResult(

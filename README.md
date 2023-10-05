@@ -1,12 +1,12 @@
-# dio-http-cache
+# dio-http-cache-isar
 
-[![Pub](https://img.shields.io/pub/v/dio_http_cache.svg?style=flat)](https://pub.dev/packages/dio_http_cache) 
+[![Pub](https://img.shields.io/pub/v/dio_http_cache.svg?style=flat)](https://pub.dev/packages/dio_http_cache_isar) 
 
 [中文介绍](./README_zh.md)
 
 Dio-http-cache is a cache library for [Dio ( http client for flutter )](https://github.com/flutterchina/dio), like [Rxcache](https://github.com/VictorAlbertos/RxCache) in Android.
 
-Dio-http-cache uses [sqflite](https://github.com/tekartik/sqflite) as  disk cache, and  [LRU](https://github.com/google/quiver-dart) strategy as memory cache.
+Dio-http-cache uses [isar](https://github.com/isar/isar) as  disk cache, and  [LRU](https://github.com/google/quiver-dart) strategy as memory cache.
 
 Inspired by [flutter_cache_manager](https://github.com/renefloor/flutter_cache_manager).
 
@@ -14,7 +14,7 @@ Inspired by [flutter_cache_manager](https://github.com/renefloor/flutter_cache_m
 
 ```yaml
 dependencies:
-  dio_http_cache: ^0.3.x #latest version
+  dio_http_cache_isar: ^0.3.x #latest version
 ```
 
 ### QuickStart

@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'obj.g.dart';
+part "obj.g.dart";
 
 @JsonSerializable()
 class CacheObj {
